@@ -36,6 +36,8 @@ import VestimentaHombre3 from '../Images/Traje-3.jpg';
 import Versiculo from '../Images/Nuestra-Historia.webp';
 import MapaVida from '../Images/Mapa-Vida.webp';
 import IconConfirmacion from '../Images/Boton-Confirmación.svg'
+import IconSobre from '../Images/IlustracionSobre.svg'
+import FondoSobres from '../Images/FondoSobres.png'
 ---
 
 <Layout>
@@ -245,32 +247,35 @@ import IconConfirmacion from '../Images/Boton-Confirmación.svg'
 			<!-- Fondo y Mascara -->
 			 
 			<div class="posicion-fondo">
-				<div class="drop-shadow-pc
+				<div class="drop-shadow-pc w-full
 										sm:w-[437px]
-										max-[370px]:w-[400px]
-										max-[380px]:w-[410px]
-										max-[400px]:w-[424px]
-										max-[420px]:w-[450px]
-										max-[440px]:w-[470px]">
+										max-[370px]:w-[410px]
+										max-[380px]:w-[420px]
+										max-[400px]:w-[440px]
+										max-[420px]:w-[460px]
+										max-[430px]:w-[480px]
+										max-[450px]:w-[500px]
+										max-[480px]:w-[530px]">
 					<img src={PapelArrrugado.src} alt="Fondo de papel arrugado decorativo" class="mask-fondo-versiculo" />
 				</div>
 			</div>
 
 			<!-- Versiculo -->
 
-			<div class="relative w-full flex flex-col items-center">
+			<div class="relative w-full flex flex-col items-center mb-13">
 				<img src={Versiculo.src} alt="Imagen con el versiculo de la boda" />
-				<button type="button" id="bt-map" class="animate-jump font-special text-xl text-white text-center w-21 h-8 bg-title rounded-lg shadow-md shadow-black/50  ">Mirame</button>
+				<button type="button" id="bt-map" class="animate-jump font-special text-xl text-white text-center w-21 h-8 bg-title rounded-lg shadow-md shadow-black/50">Mirame</button>
 			</div>
 		</section>
 
-		<section class="relative pt-13">
+		<section class="relative">
 			<!-- Imagenes de Fondo -->
 
 			<div class="posicion-fondo fondo">
-				<div class="relative  w-[calc(100%+50px)] sm:-top-[50px] max-[395px]:-top-12 max-[440px]:-top-13">
+				<div class="relative  w-[calc(100%+50px)] sm:-top-[50px] max-[415px]:-top-13.5 -top-15">
 					<img src={BgAcuarela1.src} alt="Fondo acuarela decorativo" />
 					<img src={BgAcuarela1Reves.src} alt="Fondo acuarela decorativo" />
+					<img src={BgAcuarela1.src} alt="Fondo acuarela decorativo" />
 				</div>
 			</div>
 
@@ -284,11 +289,19 @@ import IconConfirmacion from '../Images/Boton-Confirmación.svg'
 			</article>
 		</section>
 
+		<!-- Lluvia de Sobres -->
+
+		<section class="relative mx-auto flex flex-col items-center justify-center px-11 my-40 max-[400px]:my-30">
+			<img src={FondoSobres.src} alt="Fondo para la lluvia de sobres" class="absolute w-[95%]">
+			<img src={IconSobre.src} alt="Ilustración de un sobre" class="w-28 -translate-x-1 max-[375px]:w-20">
+			<p class="font-text text-[14px] text-center text-balance text-black w-1/2 -translate-x-1">Su presencia es el mejor regalo que podemos recibir en este día tan especial. Si desean acompañarnos con un detalle adicional, hemos decidido tener una lluvia de sobres.</p>
+		</section>
+
 		<footer class="relative flex flex-col items-center gap-y-2">
-			<h2 class="font-special text-[40px] text-center text-title pb-4">Confirmación de<br>Asistencia</h2>
-			<p class="font-text text-black text-center text-balance text-xl w-52 leading-5">Nos encantaría compartir este momento contigo.<br>Les agradecemos confirmar tu asistencia</p>
+			<h2 class="font-special text-[35px] text-center text-title pb-4 leading-10">Confirmación de<br>Asistencia</h2>
+			<p class="font-text text-black text-center text-balance text-base w-52 leading-5">Nos encantaría compartir este momento contigo.<br>Les agradecemos confirmar tu asistencia</p>
 			<a href="https://forms.gle/1j3v4uDaugFsz7Y5A" target="_blank">
-				<img src={IconConfirmacion.src} alt="Icono para la confirmación de asistencia">
+				<img src={IconConfirmacion.src} alt="Icono para la confirmación de asistencia" class="w-24">
 			</a>
 		</footer>
 	</main>
