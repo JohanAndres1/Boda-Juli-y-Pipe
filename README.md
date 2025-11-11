@@ -1,46 +1,46 @@
-# Astro Starter Kit: Basics
+### 💒 Invitación de Boda — [Nombre de los novios]
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+# 🌸 Descripción
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este proyecto es una **página web de invitación para boda**, diseñada con un enfoque especial en la **experiencia móvil**.  
+El sitio permite a los invitados vivir una experiencia elegante y moderna al recibir la invitación de forma digital, con un diseño **interactivo, romántico y totalmente adaptable** a diferentes tamaños de pantalla (responsive design).
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📱 Características principales
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+- 💍 **Diseño centrado en dispositivos móviles**  
+  Toda la estructura y el estilo están optimizados para brindar una experiencia fluida en celulares.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- 🌺 **Diseño responsive**  
+  Se adapta automáticamente a distintos tamaños de pantalla (computadores y móviles).
 
-## 🧞 Commands
+- 📸 **Galería de fotos**  
+  Muestra momentos especiales de los novios y su historia de amor.
 
-All commands are run from the root of the project, from a terminal:
+- 📍 **Mapa interactivo**  
+  Permite a los invitados ubicar fácilmente el lugar del evento.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+- 💌 **Mensaje personalizado de los novios**  
+  Palabras de agradecimiento y cariño dirigidas a los invitados.
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🛠️ Tecnologías utilizadas
+
+- **Astro** — Me ayuda a optimizar el HTML sin cargar archivos innecesarios de JS  
+- **Tailwind** — Me ayuda a agilizar la escritura de los estilos y la vista responsiva
+- **CSS3** — Le doy estilos específicos y animaciones personalizadas a ciertos componentes  
+
+---
+
+## 🚀 Vista previa
+
+
+---
+
+# 🩵 Créditos
+
+Diseñada por Juliana Beltran y Johan Sierra
+Desarrollado por Juhan Sierra
+© 2025 — Todos los derechos reservados
