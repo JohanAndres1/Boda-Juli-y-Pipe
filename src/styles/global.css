@@ -1,1 +1,151 @@
 @import "tailwindcss";
+
+@theme {
+  /* COLORES */
+  --color-title: #4E82BC;
+  --color-bg-img-1: rgba(133, 209, 219, .5);
+  --color-bg-img-2: rgba(145, 204, 204, .5);
+  --color-bg-img-3: rgba(115, 181, 192, .5);
+  --color-bg-img-4: rgba(133, 209, 219, .5);
+  --color-code-m1: #B3EBF2;
+  --color-code-m2: #77CBDA;
+  --color-code-m3: #57B9FF;
+  --color-code-m4: #2682BB;
+  --color-code-h1: #EDE8D0;
+  --color-code-h2: #ECE7CA;
+  --color-code-h3: #E3D8B7;
+
+  /* TIPOGRAFIAS */
+  --font-title: 'Fantasm-and-Secrets';
+  --font-text: 'Hangyaboly';
+  --font-special: 'Autumn-Crush';
+
+  /* ANIMACIONES */
+  --animate-fadeInDown: fade-in-down 0.6s ease-in-out;
+  --animate-jump: jump 3s ease-in-out infinite;
+}
+
+@font-face {
+  src: url('../assets/Fonts/Fantasm-and-Secrets.woff2') format('woff2');
+  font-family: 'Fantasm-and-Secrets';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('../assets/Fonts/Autumn-Crush.woff2') format('woff2');
+  font-family: 'Autumn-Crush';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('../assets/Fonts/Hangyaboly.woff2') format('woff2');
+  font-family: 'Hangyaboly';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.shadow-pc {
+  box-shadow: 4px 0 10px 0 #00000020,
+    -4px 0 10px 0 #00000020;
+}
+
+.drop-shadow-pc {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 25%))
+    drop-shadow(0px -4px 4px rgba(0, 0, 0, 25%));
+}
+
+.video-mask {
+  mask-image: url('../Images/Mask.svg');
+  mask-size: 110%;
+  mask-position: bottom left;
+}
+
+.mask-fondo {
+  mask-image: url('../Images/Mask2.svg');
+  mask-position: top;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.mask-fondo-versiculo {
+  mask-image: url('../Images/Mask3.svg');
+  mask-position: top;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.fondo {
+  z-index: 0;
+  opacity: 50%;
+}
+
+.l1 {
+  background-image: url('../Images/Lugar-1.webp');
+  position: relative;
+  z-index: 1;
+}
+.l2 {
+  background-image: url('../Images/Lugar-2.webp');
+  position: relative;
+  z-index: 1;
+}
+.l3 {
+  background-image: url('../Images/Lugar-3.jpg');
+  position: relative;
+  z-index: 1;
+}
+
+.espejo {
+  transform: scaleY(-1);
+}
+
+.title {
+  @apply font-title text-[45px] text-center text-title relative;
+}
+.img-lugar {
+  @apply w-40 h-28 max-[380px]:w-36 max-[380px]:h-24 rounded-xl bg-center bg-cover bg-no-repeat;
+}
+p > span {
+  @apply font-title text-xl block text-title;
+}
+.pf-c {
+  @apply font-text text-xl text-black leading-2.5 my-2.5
+}
+.posicion-fondo {
+  @apply absolute flex flex-col items-center w-full
+}
+.vestimenta {
+  @apply w-20 h-28 max-[380px]:w-16 max-[380px]:h-24 rounded-xl object-cover;
+}
+.color-code {
+  @apply rounded-full size-6 border-[.5px]
+}
